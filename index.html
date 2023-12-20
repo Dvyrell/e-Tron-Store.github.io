@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport"content="width=device-width, initial-scale=1.0" />
+      <title>e-Tron Store</title>
+      <link rel="icon" href="Assets/Lgos2.jpg" type="image/x-icon">
+      <link rel="stylesheet" href="CSS/styleutama.css" />
+   </head>
+
+   <body>
+      <div class="container">
+         <div class="navbar">
+            <img src="Assets/Lgosl.jpg" class="logo" alt="" />
+            <h3 class="h3">e-Tron Store</h3>
+
+            <nav>
+               <ul id="menuList">
+                  <li>
+                     <a href=""><b>HOME</b></a>
+                  </li>
+                  <li>
+                     <a href="#promo"><b>PRODUCTS</b></a>
+                  </li>
+                  <li>
+                     <a href="#footer"><b>FOOTER</b></a>
+                  </li>
+               </ul>
+            </nav>
+
+            <img src="TambahanAssets/menu.png" class="menu" onclick="togglemenu()" />
+         </div>
+
+      <div class="row"></div>
+         <div class="col-1">
+            <h2>PS4 V2<br />Dualshock 4</h2>
+            <h3>Wireless Controller for PlayStation 4</h3>
+            <p>(Compatible/Generic)</p>
+            <h4>
+               <b>IDR 499,000.00</b><br/>
+               <del>IDR 899,000.00</del>
+            </h4>
+            <button class="butbuy" type="button"> &ensp; Buy now <img src="TambahanAssets/arrow.png" alt="" />
+            </button>
+         </div>
+         
+         <div class="col-2">
+            <img src="TambahanAssets/controller.png" class="controller" alt="" width="100px" />
+            <div class="color-box"></div>
+            <div class="add-btn">
+               <img src="TambahanAssets/add.png" alt="" />
+               <p><small>Add to Cart</small></p>
+            </div>
+         </div>
+      </div>
+
+
+
+
+
+
+
+      <main id="main">
+         <section id="promo">
+            <div class="bgharpah">
+               <div class="terbaru">
+                  <br/>
+                  <h2 style="text-align: left" class="featured"> Produk Terbaru dan Promo Hari Pahlawan
+                  </h2>
+                  <br/>
+                  <p>
+                     Check Produk Terbaru Kami Dan Manfaatkan Promosi Khusus Kami !<br/>
+                  </p>
+                  <br/>
+                  <a href="#myImage" id="myLink" class="button">Shop Now</a>
+                  <br/>
+                  <br/>
+               </div>
+             </div>
+            <div id="myImage" style="display: none">
+              <div class="hayo">
+                 <div id="myImage">
+                     <img src="Assets/Motor-removebg-preview.png" width="230px" height="220px" />
+                     <p>
+                        Polytron EVO Electric Sepeda <br/>Motor
+                        Elektrik-Kinetic Blue
+                     </p>
+                     <p>
+                        <b>IDR 28,000,000.00</b><br />
+                        <del>IDR 56,000,000.00</del>
+                     </p>
+                     <!-- <br> -->
+                     <div class="button-wrapper">
+                        <a href="#" class="button">Buy Now</a>
+                     </div>
+                </div>
+                  <div id="myImage">
+                     <img class="mesin" src="Assets/MesinCuci-2.png" width="300px" height="220px" />
+                     <p>
+                        Mesin Cuci LG 15kg dengan pengering <br/>
+                        8kg, ThinQ dengan Wifi
+                     </p>
+                     <p>
+                        <b>IDR 8,850,000.00</b><br />
+                        <del>IDR 17,700,000.00</del>
+                     </p>
+                     <!-- <br> -->
+                     <div class="button-wrapper">
+                        <a href="#" class="button" >Buy Now</a>
+                     </div>
+                     <!-- <button class="button">Buy Now</button> -->
+                  </div>
+                  <div id="myImage">
+                     <img
+                        src="Assets/speaker.jpeg"
+                        width="220px" />
+                     <p>
+                        Speaker Harman/Kardon Omni 10 Plus <br />
+                        -black metalic
+                        <!-- <div class="bmet"> -black metalic</div> -->
+                     </p>
+                     <p>
+                        <b>IDR 3,725,000.00</b><br />
+                        <del>IDR 7,450,000.00</del>
+                     </p>
+                     <!-- <br> -->
+                     <div class="button-wrapper">
+                        <a href="#" class="button" >Buy Now</a>
+                     </div>
+                  </div>
+
+                  <div id="myImage">
+                     <img class="tv2" src="Assets/tv.jpeg" width="220px" />
+                     <p>
+                        Samsung Led TV Curved UHD 4K <br/>
+                        Smart TV 49 inch Layar Cekung
+                     </p>
+                     <p>
+                        <b>IDR 5,395,000.00</b><br/>
+                        <del>IDR 10,790,000.00</del>
+                     </p>
+                     <div class="button-wrapper">
+                        <a href="#" class="button">Buy Now</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      
+
+      <section id="products">
+         <h2 class="featured">Produk Menarik</h2>
+         <br/>
+         <div class="featur">
+            <ul>
+               <!-- Barang 1 -->
+               <li class="product" id="product1">
+                  <div class="laptop">
+                     <img class="lap" src="Assets/Flowx162.png" alt="Product 1" width="300px" height="220px"/>
+                     <div class="teks">
+                        <!-- <h3>ASUS ROG FLOW X16 </h3> -->
+                        <p><b>Asus Rog Flow X16</b> Gaming Laptop Ryzen...</p>
+                        <br/>
+                        <div class="price">
+                           IDR 22,263,000.00 - 23,874,000.00
+                        </div>
+                     </div>
+                     <button class="toggle-description" onclick="open_box('product1')"> Detail Produk
+                     </button>
+                      <div class="buy-box">
+                        <!-- Isi informasi barang pertama -->
+                        <div class="buy-box-wrapper">
+                           <div class="title-box">
+                              <h3><b>ASUS ROG FLOW X16</b></h3>
+                              <span class="close">
+                                 <button
+                                    class="close-btn"
+                                    onclick="close_box('product1')">
+                                    <i class="fa-solid fa-xmark">X</i>
+                                 </button>
+                              </span>
+                           </div>
+                           <div class="content-box">
+                              <h4>
+                                 <b>Asus Rog Flow X16</b> Gaming Laptop Ryzen 9 6900HS
+                              </h4>
+                              <br />
+                              <a style="text-decoration: none" href="https://rog.asus.com/id/laptops/rog-flow/rog-flow-x16-2022-series/" target="_blank">
+                                 <h4><b>Visit the ASUS Store</b></h4>
+                                 <br />
+                              </a>
+                              <h4>Style : Ryzen 9 6900HS | GeForce RTX 3060</h4>
+                              <br />
+                              <div class="spek">
+                                 <h4 class="brand">
+                                    Brand <br />
+                                    Model Name <br />
+                                    Screen Size <br />
+                                    Color <br />
+                                    OS <br />
+                                    Cpu <br />
+                                    RAM <br />
+                                    GPU <br />
+                                    CPU Speed
+                                 </h4>
+                                 <h4 class="brand">
+                                    ASUS <br />
+                                    ROG Flow X16<br />
+                                    16 inch <br />
+                                    Black or Grey <br />
+                                    Windows 11 Home <br />
+                                    Ryzen 9 <br />
+                                    16 GB <br />
+                                    RTX 3060 <br />
+                                    5.6 GHz
+                                 </h4>
+                              </div>
+                              <br />
+                              <h3 class="cust">
+                                 Customer reviews 4.3 out of 5 stars
+                              </h3>
+                              <h4 style="color: white">
+                                 451 global ratings <br />
+                                 5 star&emsp;&emsp;73% <br />
+                                 4 star&emsp;&emsp;21% <br />
+                                 3 star&emsp;&emsp;5% <br />
+                                 2 star&emsp;&emsp;2% <br />
+                                 1 star&emsp;&emsp;1% <br />
+                              </h4>
+                              <br />
+
+                              <!-- <h4>Nikmati portabilitas dan keserbagunaan tanpa mengorbankan kekuatan gaming Windows 11 Home.ROG Flow X16 memiliki kinerja uang cepat dengan prosesor mutakhir hingga AMD Ryzen 9 6900HS.Bermain game lebih percaya diri dengan GPU laptop hingga NVIDIA® GeForce RTX 3060.Bergerak bebas dan membuat karya, streaming, dan mainkan di mana pun.</h4><br> -->
+
+                              <div class="ulasan">
+                                 <div class="napel">
+                                    <img class="decad" src="TambahanAssets/decade logo.jpg" alt="PP DECADE" />
+                                    <p>Bambang</p>
+                                    <br />
+                                 </div>
+
+                                 <div class="katapel">
+                                    <p>
+                                       Rating : 4/5 <b> Had issues but resolved them. Good value for the money.</b>
+                                       <br />
+                                       Reviewed in the United States on November 4, 2023
+                                       <br />
+                                       Style : Ryzen 9 6900HS | GeForce RTX 3060 |
+                                       <b class="verif" style="color: rgb(255, 111, 0);    font-size: 10px;" >Verified Purchase</b>
+                                    </p>
+                                    <p style="color: black">
+                                       This laptop is a beast. The cooling
+                                       system it has does an amazing job. I can
+                                       run crazy games like Red Dead 2, or
+                                       Starfield (with DLSS) and get over 130
+                                       FPS. It did hurt my wallet when I bought
+                                       it, but if you want a laptop that can get
+                                       great frames on whatever you play on it.
+                                       This laptop will get the job done.
+                                    </p>
+                                    <p>3 people found this helpful</p>
+                                 </div>
+                                 <br />
+                                 <button class="maon">HelpFul</button>
+                                 <button class="maon">Report</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="https://shopee.co.id/ASUS-ROG-FLOW-X16-TOUCH-GV601RM-RYZEN-9-6900HS-RTX3060-6GB-16GB-1TB-W11-OHS-16.0QHD-165HZ-RGB-i.78730497.3333062664?sp_atk=042491c2-a54a-4b4f-8ca6-773ee79412fc&xptdk=042491c2-a54a-4b4f-8ca6-773ee79412fc" class="button" >Buy Now</a>
+                  </div>
+               </li>
+
+               <!-- Barang 2 -->
+               <li class="product" id="product2">
+                  <div class="hp">
+                     <img class="han" src="Assets/iphone-removebg-preview.png" alt="Product 2" width="330px" height="220px" />
+                     <div class="teks">
+                        <p>
+                           <b>IPhone 14 Pro Max </b> Chip A16 Bionic 6GB R...
+                        </p>
+                        <br />
+                        <div class="price">
+                           IDR 22,499,000.00 - 30,499,000.00
+                        </div>
+                     </div>
+                     <button class="toggle-description" onclick="open_box('product2')"> Detail Produk
+                     </button>
+                     <div class="buy-box">
+                        <!-- Isi informasi barang kedua -->
+                        <div class="buy-box-wrapper">
+                           <div class="title-box">
+                              <h3><b>IPhone 14 Pro Max </b></h3>
+                              <span class="close">
+                                 <button
+                                    class="close-btn"
+                                    onclick="close_box('product2')">
+                                    <i class="fa-solid fa-xmark">X</i>
+                                 </button>
+                              </span>
+                           </div>
+                           <div class="content-box">
+                              <h4>
+                                <b>IPhone 14 Pro Max</b> Chip A16 Bionic 6GB RAM 1TB ROM
+                              </h4>
+                              <br>
+                              <a style="text-decoration: none" href="https://www.apple.com/" target="_blank"> <h4><b>Visit the Apple Store</b></h4><br/>
+                              </a>
+                              <h4> Size : 1TB | Color : Black - White - Gold - Graphite
+                              </h4>
+                              <br />
+                              <div class="spestar">
+                                 <div class="spek">
+                                    <h4 class="brand">
+                    
+                                       Brand<br />
+                                       Model Name<br />
+                                       Wireless Carrier<br />
+                                       Operating System<br />
+                                       Cellular Technology<br />
+                                       Color <br />
+                                       Screen Size<br />
+
+                                    </h4>
+                                    <h4 class="brand">
+
+                                       Apple <br />
+                                       iPhone 14 Pro Max<br />
+                                       Unlocked <br />
+                                       iOS 16 <br />
+                                       5G <br />
+                                       Deep Purple <br />
+                                       6.7 Inches <br />
+
+                                    </h4>
+                                 </div>
+                                 <br />
+                                 <h3 class="cust">
+                                    Customer reviews 4.3 out of 5 stars
+                                 </h3>
+                                 <h4 style="color: white">
+                                    451 global ratings <br />
+                                    5 star&emsp;&emsp;73% <br />
+                                    4 star&emsp;&emsp;21% <br />
+                                    3 star&emsp;&emsp;5% <br />
+                                    2 star&emsp;&emsp;2% <br />
+                                    1 star&emsp;&emsp;1% <br />
+                                 </h4>
+                              </div>
+                              <br />
+                              <div class="ulasan">
+                                 <div class="napel">
+                                    <img src="TambahanAssets/no pp.jpg" alt="PP" />
+                                    <p>Ricardo Rangel Ruiz</p>
+                                    <br />
+                                 </div>
+
+                                 <div class="katapel">
+                                    <p> Rating : 4/5 <b> El reacondicionado premium es la opción. </b>
+                                       <br />
+                                       Reviewed in Mexico on October 13, 2023
+                                       <br />
+                                       Size : 1TB | Color : Gold |
+                                       <b class="verif" style="color: rgb(255, 111, 0);font-size: 11px;" >Verified Purchase</b>
+                                    </p>
+                                    <p style="color: black">
+                                       Impresionado, parecía uno literalmente
+                                       nuevo, junto con una tarjeta firmada por
+                                       la persona que lo revisó. No he tenido
+                                       probelma con el y lo compré hace más de
+                                       un año.
+                                    </p>
+                                    <p>3 people found this helpful</p>
+                                 </div>
+                                 <br />
+                                 <button class="maon">HelpFul</button>
+                                 <button class="maon">Report</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="https://www.apple.com/" class="button" >Buy Now</a >
+                  </div>
+               </li>
+
+               <!-- Barang 3 -->
+               <li class="product" id="product3">
+                  <div class="pc">
+                     <img class="pc2" src="Assets/pc-removebg-preview.png" alt="Product 3" width="200px" height="220px" />
+                     <div class="teks">
+                        <p>
+                           PC Gaming<b> Intel 12th GEN </b>Core i7 12700F,
+                           Gef...
+                        </p>
+                        <br />
+                        <div class="price">IDR 21,860,000.00</div>
+                     </div>
+                     <button
+                        class="toggle-description"
+                        onclick="open_box('product3')">Detail Produk
+                     </button>
+                     <div class="buy-box">
+                      <!-- Isi informasi barang ketiga -->
+                      <div class="buy-box-wrapper">
+                         <div class="title-box">
+                            <h3> PC Gaming<b> Intel 12th GEN</b></h3>
+                            <span class="close">
+                               <button
+                                  class="close-btn"
+                                  onclick="close_box('product3')">
+                                  <i class="fa-solid fa-xmark">X</i>
+                               </button>
+                            </span>
+                         </div>
+                         <div class="content-box">
+                           <h4>
+                              <b>PC Gaming INTEL 12th Gen</b> Core i7 12700F, Geforce RTX 3070 8GB
+                           </h4>
+                            <br>
+                            <a style="text-decoration: none" href="https://us.yeyiangaming.com/" target="_blank">  <h4><b>Visit the YEYIAN US Store</b></h4><br/>
+                            </a>
+                              <h4> Style: i7-12700F | RTX 3070 8GB
+                            </h4>
+                            <br />
+                            <div class="spestar">
+                              <div class="spek">
+                                <h4 class="brand">
+
+                                   Brand <br />
+                                   Model Name <br />
+                                   Color <br />
+                                   OS <br />
+                                   Cpu <br />
+                                   ROM <br />
+                                   RAM <br />
+                                   GPU <br />
+                                   Included Components
+
+                                </h4>
+                                <h4 class="brand">
+
+                                   YEYIAN <br />
+                                   Light Run<br />
+                                   White <br />
+                                   Windows 11 Home <br />
+                                   Intel 12th Gen <br />
+                                   2 TB <br />
+                                   16 GB <br />
+                                   RTX 3070 <br />
+                                   RGB Lighting
+
+                                </h4>
+                             </div>
+                               <br />
+                               <h3 class="cust">
+                                  Customer reviews 4.3 out of 5 stars
+                               </h3>
+                               <h4 style="color: white">
+                                  451 global ratings <br />
+                                  5 star&emsp;&emsp;73% <br />
+                                  4 star&emsp;&emsp;8% <br />
+                                  3 star&emsp;&emsp;5% <br />
+                                  2 star&emsp;&emsp;5% <br />
+                                  1 star&emsp;&emsp;9% <br />
+                               </h4>
+                            </div>
+                            <br />
+                            <div class="ulasan">
+                               <div class="napel">
+                                  <img src="TambahanAssets/suhail.JPG" alt="PP" />
+                                  <p>Suhail Ahmad Rafif</p>
+                                  <br />
+                               </div>
+
+                               <div class="katapel">
+                                  <p> Rating : 4/5 <b>Barang Podo Karo Nde Gambar Penjualane </b>
+                                     <br />
+                                     Reviewed in Jawa Timur Indonesia on November 17, 2023
+                                     <br />
+                                     Size : 1TB | Color : Gold |
+                                     <b class="verif" style="color: rgb(255, 111, 0);font-size: 11px;" >Verified Purchase</b>
+                                     <p style="color: black">
+                                       Ada sedikit lecet di bagian cover pc, Over all untuk penggunaannya sudah bagus dicoba buat bermain Genshin tidak ada torble, lancar2 saja. Untuk pelayanan dari web sendiri pengantaran cepat dan aman, packaging nya bagus dan Tebel. Aman Pokoke. Suwun bolo.
+                                    </p>
+                                  </p>
+                                  <p style="color: black">
+                                     
+                                  </p>
+                                  <p>3 people found this helpful</p>
+                               </div>
+                               <br />
+                               <button class="maon">HelpFul</button>
+                               <button class="maon">Report</button>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                     <a href="https://www.amazon.com/Desktop-i7-12700F-GeForce-Windows-G15CF-AB766/dp/B0BDTWQ2DW/ref=sr_1_13?keywords=pc%2Bgaming%2B12%2Bth%2Bgen%2Bwith%2Brtx%2B3070&sr=8-13&th=1#" class="button" >Buy Now</a>
+ 
+                  </div>
+               </li>
+
+               <!-- Barang 4 -->
+               <li class="product" id="product4">
+                  <div class="stik">
+                     <img src="TambahanAssets/controller.png" alt="Product 4" width="200px" height="220px" />
+                     <div class="teks">
+                        <p>
+                           <b>PS4 V2 Dualshock 4</b> Wireless Cotroller White fo...
+                        </p>
+                        <br />
+                        <div class="price">IDR 1,002,580.00</div>
+                     </div>
+                     <button class="toggle-description" onclick="open_box('product4')"> Detail Produk
+                     </button>
+                     <div class="buy-box">
+                        <!-- Isi informasi barang ketiga -->
+                        <div class="buy-box-wrapper">
+                           <div class="title-box">
+                              <h3> <b>PS4 V2 Dualshock 4</b></h3>
+                              <span class="close">
+                                 <button
+                                    class="close-btn"
+                                    onclick="close_box('product4')">
+                                    <i class="fa-solid fa-xmark">X</i>
+                                 </button>
+                              </span>
+                           </div>
+                           <div class="content-box">
+                              <h4>
+                                 <b>PS4 V2 Dualshock 4</b> Wireless Cotroller for PlayStation 4
+                              </h4>
+                              <br>
+                              <a style="text-decoration: none" href="https://www.playstation.com/en-us/" target="_blank"> <h4><b>Visit the SONY PlayStation Store</b></h4>
+                              </a>
+
+                              <h4>
+                                 Platform : PlayStation 4 | 1,995 ratings <br>
+                              </h4>
+                              <br>
+                              <h4>
+                                 <b style="background: linear-gradient(to left, #fb5283, #ff3527); padding: 10px;
+                                 border-radius: 5px;">e-Tron Choise</b> 
+                                 | Overall Pick
+                              </h4>
+                              <br><br>
+
+                              <div class="spestar">
+                                <div class="spek">
+                                  <h4 class="brand">
+  
+                                     Brand <br />
+                                     Model Name <br />
+                                     Color <br />
+                                     Included Components
+  
+                                  </h4>
+                                  <h4 class="brand">
+  
+                                     SONY <br />
+                                     PS4 V2 Dualshock 4<br />
+                                     Glacier White <br />
+                                     Cable Charging
+  
+                                  </h4>
+                               </div>
+                                 <br />
+                                 <h3 class="cust">
+                                    Customer reviews 4.6 out of 5 stars
+                                 </h3>
+                                 <h4 style="color: white">
+                                    451 global ratings <br />
+                                    5 star&emsp;&emsp;84% <br />
+                                    4 star&emsp;&emsp;6% <br />
+                                    3 star&emsp;&emsp;2% <br />
+                                    2 star&emsp;&emsp;1% <br />
+                                    1 star&emsp;&emsp;6% <br />
+                                 </h4>
+                              </div>
+                              <br />
+                              <div class="ulasan">
+                                 <div class="napel">
+                                    <img src="TambahanAssets/bintang.JPG" alt="PP" />
+                                    <p>Bintang Atsal F </p>
+                                    <br />
+                                 </div>
+  
+                                 <div class="katapel">
+                                    <p> Rating : 4/5 <b> Terbaik untuk Gaming</b>
+                                       <br />
+                                       Reviewed in Jawa Timur Indonesia on October 13, 2023
+                                       <br />
+                                       <b class="verif" style="color: rgb(255, 111, 0);font-size: 11px;" >Verified Purchase</b>
+                                    </p>
+                                    <p style="color: black">
+                                       overall bagus stik nya ori plus dapet cable charging bales chat nya cepet
+                                       dan packingnya tebel aman sudah dites nyala dan dan bisa di cas. Mantap Jiwa
+                                    </p>
+                                    <p>3 people found this helpful</p>
+                                 </div>
+                                 <br />
+                                 <button class="maon">HelpFul</button>
+                                 <button class="maon">Report</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="https://www.amazon.com/Sony-Dualshock-Wireless-Controller-PlayStation-4/dp/B07VQVG4GS/ref=sr_1_10?keywords=PS4+V2+Dualshock+4&sr=8-10" class="button" >Buy Now</a>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+    </main>
+      <br /><br /><br /><br /><br /><br /><br />
+
+
+
+
+
+
+<hr>
+   <br>
+
+      <div class="yesno">
+         <p style="background-color:rgb(199, 199, 199);"> Related searches: PC Gaming | IPhone | Speaker </p>
+         <p style="background-color:rgb(199, 199, 199);">Did you find what you were looking for?</p>
+         <a href="#"><button>YES</button></a>
+         <a href="#promo"><button>NO</button></a>
+
+         <div style="background-color:rgb(199, 199, 199); margin: 20px;">
+            <p>
+               <b>About Us</b>
+            </p>
+            <p>
+               e-Tron Store terdiri sebagai web e-commerce produk alat elektronik dengan jangkauan global, perusahaan ini menghadirkan perlengkapan gaming dan produk untuk keseharian seperti mesin cuci tv dan lain lain Didirikan pada 10 oktober 2023 di Indonesia, Surabaya, oleh 2 siswa.
+            </p>
+         </div>
+      </div>
+
+   <br>
+<hr><br>
+
+
+
+
+      <!-- Footer start -->
+      <footer id="footer">
+         <div class="links">
+            <a href="#">Home</a>
+            <a href="#promo">Promo</a>
+            <a href="#products">Featured</a>
+         </div>
+         <div class="credit">
+            <p>
+               e-Tron Store Site: <br><br>International - Español - Português - Deutsch - Pусский - Italiano - Indonesian - 한국어 - 日本語 <br>- اللغة العربية - ภาษาไทย - Türk - Nederlands - tiếng Việt - עברית
+            </p>
+               <br>
+               <hr style="margin: 0 45px 0 45px;">
+               <br>
+               <p>FOLLOW US OR CONTACT US : </p>
+            <div class="social-links">
+               <a href="https://www.instagram.com/farrellmuh_dvyrell/"><img src="TambahanAssets/insta.png" alt="Instagram"/></a>
+               <a href="https://web.whatsapp.com/" ><img src="TambahanAssets/WhatsApp.svg.png" alt="WhatsApp" /></a>
+               <a href="#" ><img src="TambahanAssets/tiktok.png" alt="tiktok" /></a>
+               <a href="#" ><img src="TambahanAssets/Facebook_f_logo_(2019).svg (1).png" alt="Facebook" /></a>
+            </div>
+               <br>
+               <p class="nmr">
+                  <a style="text-decoration: none;"  href="#"> +62 895-3648-67296 </a>
+               </p>
+               <br>
+               <hr style="margin: 0 45px 0 45px;">
+               <br>
+               <br>
+            <p>
+               Created by
+               <a style="text-decoration: none; font-size: 14px" href="#" >Farrell and Suhail</a>.|&ensp; Copyright &copy; 2023 e-Tron Store All rights reserved.
+            </p>
+            <br>
+            <br>
+         </div>
+      </footer>
+
+      <script src="JS/fitur.js"></script>
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="form">
+
+    <h1>Contact Us</h1>
+    <form action="/submit-contact" method="post">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    </div> -->
+
+<!-- <div class="description">
+      <h4>Download this game by purchasing it for $59</h4>
+      <p class="text-file-game-box">Included File</p>
+      <p class="text-file-game-box">Resident Evil 4 (67,2 GB)</p>
+      <p class="text-email-game-box">Your Email address payment confirmation will be sent here</p>
+      <input type="email" name="" id="" placeholder="youremail@gmail.com">
+      <button><i class="fa-brands fa-paypal"></i> pay with PayPal</button>
+  </div> -->
+<!-- <script>
+    let buybtn = document.querySelector('.side-btn-game');
+    let buybox = document.querySelector('.content-box');
+
+    function open_box() {
+        console.log('Munculkan box')
+        buybox.style.display = 'block'
+    }
+
+    function close_box() {
+        console.log('tutup Box')
+        buybox.style.display = 'none'
+    }
+</script> -->
+
+<!-- <script>
+      let buybtn = document.querySelectorAll('.toggle-description');
+      let buybox = document.querySelector('.buy-box');
+
+      function open_box() {
+          console.log('Munculkan box')
+          buybox.style.display = 'block'
+      }
+
+      function close_box() {
+          console.log('tutup Box')
+          buybox.style.display = 'none'
+      }
+  </script> -->
+<!-- <script>
+        var toggleButtons = document.querySelectorAll(".toggle-description");
+        toggleButtons.forEach(function (button) {
+          button.addEventListener("click", function () {
+            var description = this.parentNode.querySelector(".buy-bo");
+            description.classList.toggle("active");
+          });
+        });
+      </script> -->
+
+<!-- <section id="products">
+      <h2 class="featured">Featured Products</h2>
+    <div class="featur">
+      <ul>
+        <li class="product">
+          <div class="laptop">
+          <img src="Assets/Flowx16.jpeg" alt="Product 1" width="300px">
+          <div class="teks">
+          <h3>ASUS ROG FLOW X16 </h3>
+          <p>GV601RM GeForce RTX 3060-Ryzen 9 6900HS 16GB RAM 1TB Gaming Laptop</p><br>
+          <div class="price">IDR 22,263,000.00 - 23,874,000.00</div>
+          </div>
+          <button class="toggle-description" onclick="open_box(product1)">Detail Produk</button>
+
+          <div class="buy-box">
+            <div class="buy-box-wrapper">
+                <div class="title-box">
+                    <h3>ASUS ROG FLOW X16 </h3>
+                    <span class="close">
+                        <button class="close-btn" onclick="close_box(product1)">
+                            <i class="fa-solid fa-xmark">X</i>
+                        </button>
+                    </span>
+                </div>
+                <div class="content-box">
+                    <a style="text-decoration: none;" href="https://rog.asus.com/id/laptops/rog-flow/rog-flow-x16-2022-series/" target="_blank"><h4><b>Visit the ASUS Store</b></h4><br></a>
+                    <h4>Style : Ryzen 9 6900HS | GeForce RTX 3060</h4><br>
+                    <h4 class="brand">Brand <br>
+                      Model Name <br>
+                      Screen Size  <br>
+                      Color  <br>
+                      OS  <br>
+                      Cpu <br>
+                      RAM <br>
+                      GPU  <br>
+                      CPU Speed
+                    </h4>
+                      <h4 class="brand">ASUS <br>
+                        ROG Flow X16<br>
+                        16 inch   <br>
+                        Black or Grey  <br>
+                        Windows 11 Home <br>
+                        Ryzen 9 <br>
+                        16 GB <br>
+                        RTX 3060  <br>
+                        5.6 GHz
+                      </h4>
+                    <button><i class="fa-brands fa-paypal"></i> pay with PayPal</button>
+                </div>
+            </div>
+          </div>
+          <a href="#" class="button">Buy Now</a>
+        </li>
+        <li class="product">
+          <div class="hp">
+          <img src="Assets/iphone-removebg-preview.png" alt="Product 2" width="362px" height="220px">
+          <div class="teks">
+          <h3>IPhone 14 pro max</h3>
+          <p>Chip A16 Bionic 6GB RAM 1TB ROM,Kamera Utama 48MP Expensive HP</p><br>
+          <div class="price">IDR 22,499,000.00 - 30,499,000.00 </div>
+          </div>
+          <button class="toggle-description" onclick="open_box(product2)">Detail Produk</button>
+          <div class="buy-box">
+            <div class="buy-box-wrapper">
+                <div class="title-box">
+                    <h3>ASUS ROG FLOW X16</h3>
+                    <span class="close">
+                        <button class="close-btn" onclick="close_box(product1)">
+                            <i class="fa-solid fa-xmark">X</i>
+                        </button>
+                    </span>
+                </div>
+                <div class="content-box">
+                    <a style="text-decoration: none;" href="https://rog.asus.com/id/laptops/rog-flow/rog-flow-x16-2022-series/" target="_blank"><h4><b>Visit the ASUS Store</b></h4><br></a>
+                    <h4>Style : Ryzen 9 6900HS | GeForce RTX 3060</h4><br>
+                    <h3>asolaleuay</h3>
+                    <button><i class="fa-brands fa-paypal"></i> pay with PayPal</button>
+                </div>
+            </div>
+          </div>
+        <a href="#" class="button">Buy Now</a>
+          </div>
+        </li>
+        <li class="product">
+          <div class="pc">
+          <img class="pc2" src="Assets/pc-removebg-preview.png" alt="Product 3" width="200px" height="220px">
+          <div class="teks">
+          <h3>PC Gaming INTEL 12th Gen</h3>
+          <p>Core i7 12700F, Geforce RTX 3070 8GB, RAM 16GB 2TB FULL RGB With Mouse Logitech</p><br>
+          <div class="price">IDR 21,860,000.00</div>
+          </div>
+          <button class="toggle-description" onclick="open_box()">Detail Produk</button>
+            <a href="#" class="button">Buy Now</a>
+        </li>
+        <li class="product">
+        <div class="stik">
+          <img src="TambahanAssets/controller.png" alt="Product 4" width="200px" height="225px">
+          <div class="teks">
+          <h3>PC Gaming INTEL 12th Gen</h3>
+          <p>Core i7 12700F, Geforce RTX 3070 8GB, RAM 16GB 2TB FULL RGB With Mouse Logitech</p><br>
+          <div class="price">IDR 21,860,000.00</div>
+          </div>
+          <button class="toggle-description">Detail Produk</button>
+          <div class="description">
+            <p>daI7Wb78ct7ybe8 byweby</p>
+          </div>
+          <a href="#" class="button">Buy Now</a>
+        </div>
+        </li>
+      </ul>
+    </div> -->

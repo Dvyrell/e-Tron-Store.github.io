@@ -1,0 +1,2062 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+/* Navigasi Area !!!! */
+
+.container {
+	width: 100%;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.container .h3{
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 2.1rem;
+	padding-left: 1.3rem;
+}
+.navbar {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.logo {
+	width: 50px;
+	cursor: pointer;
+	margin: 30px 0;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+.menu {
+	width: 30px;
+	cursor: pointer;
+	display: none;
+}
+nav {
+	flex: 1;
+	text-align: right;
+}
+nav ul {
+	margin-top: -5px;
+}
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 30px;
+}
+nav ul li a {
+	text-decoration: none;
+	color: #000;
+	font-size: 20px;
+}
+nav ul li a:hover {
+	background-color: #cbc7c7;
+	padding: 7px 13px;
+	border-radius: 10px;
+	transition: all 0.5s ease;
+}
+
+/* Navigasi Area End */
+
+/* Home Section Area !!!! */
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 100px 0;
+}
+.col-1 {
+	flex-basis: 40%;
+	position: relative;
+	margin-left: 50px;
+}
+.col-1 h2 {
+	font-size: 54px;
+}
+.col-1 h3 {
+	font-size: 30px;
+	color: #707070;
+	font-weight: 100;
+	margin: 20px 0 10px;
+}
+.col-1 p {
+	font-size: 15px;
+	color: #b7b7b7;
+	font-weight: 100;
+}
+.col-1 h4 {
+	margin: 30px 0;
+	font-size: 20px;
+}
+button {
+	width: 140px;
+	height: 40px;
+	border: 0;
+	pad: 12px 10px;
+	outline: none;
+	color: #fff;
+	background: linear-gradient(to right, #fb5283, #ff3527);
+	border-radius: 6px;
+	cursor: pointer;
+	transition: width 0.5s;
+}
+button img {
+	width: 35px;
+	display: none;
+}
+button:hover img {
+	display: block;
+}
+.butbuy:hover {
+	width: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.col-1:after {
+	content: '';
+	width: 10px;
+	height: 57%;
+	background: linear-gradient(#ff469f, #ff6062);
+	position: absolute;
+	left: -40px;
+	top: 8px;
+}
+.col-2 {
+	position: relative;
+	right: -550px;
+	top: -400px;
+	flex-basis: 60%;
+	display: flex;
+	align-items: center;
+}
+.col-2 .controller {
+	width: 50%;
+}
+.color-box {
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: linear-gradient(#ff54a2, #ff575a);
+	border-radius: 20px 0 0 20px;
+	height: 100%;
+	width: 80%;
+	z-index: -1;
+	/* transform: translateX(120px); */
+}
+.add-btn img {
+	width: 35px;
+	margin-bottom: 5px;
+}
+.add-btn {
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+}
+.button-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.button {
+	width: 140px;
+	height: 20px;
+	border: 0;
+	outline: none;
+	color: #fff;
+	background-color: #333;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: width 0.5s;
+}
+.button img {
+	width: 35px;
+	display: none;
+}
+.button:hover img {
+	display: block;
+}
+.button:hover {
+	width: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* Home Section Area End */
+
+/* Promo Section Area !!!! */
+
+main {
+	padding: 20px;
+	margin-top: -300px;
+}
+.terbaru {
+	background-color: white;
+}
+.featured {
+	background-image: linear-gradient(#a20e0e, #333);
+	color: #fff;
+	padding: 20px;
+}
+#promo {
+	text-align: center;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+#promo h2 {
+	margin-top: 0;
+}
+#promo p {
+	margin-bottom: 20px;
+}
+.hayo {
+	display: flex;
+	justify-content: space-around;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+del {
+	font-size: small;
+}
+#promo .button {
+	background-color: #333;
+	color: #fff;
+	display: inline-block;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+#promo .button:hover {
+	background-color: #666;
+}
+
+
+/* Promo Section Area End */
+
+/* Produk Menarik Section Area !!!! */
+
+.product {
+	margin-left: 20px;
+}
+#products {
+	margin-top: 15px;
+}
+#products h2 {
+	margin-top: 0;
+}
+#products ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#products li {
+	display: inline-block;
+	margin-right: 20px;
+	vertical-align: top;
+	width: 30%;
+}
+#products img {
+	display: block;
+	margin-bottom: 10px;
+	max-width: 100%;
+}
+#products h3 {
+	margin-top: 0;
+}
+#products p {
+	margin-bottom: 10px;
+}
+.featur .product .stik {
+	display: none;
+}
+#products .price {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+#products .button {
+	background-color: #333;
+	color: #fff;
+	display: block;
+	margin-top: 10px;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+}
+.product .description {
+	display: none;
+}
+.product .description.active {
+	display: block;
+}
+#products .button:hover {
+	background-color: #666;
+}
+.content-box {
+	padding: 30px;
+	width: 50%;
+	background-color: #666;
+}
+.toggle-description {
+	background-color: #333;
+	color: #fff;
+	padding: 5px 10px;
+	width: 140px;
+	height: 40px;
+	border: 0;
+	outline: none;
+	color: #fff;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: width 0.5s;
+}
+.toggle-description:hover {
+	display: block;
+	position: relative;
+	width: 100px;
+}
+.toggle-button {
+	display: none;
+}
+.toggle-button img {
+	position: absolute;
+	top: 40px;
+	right: 50px;
+	width: 40px;
+	height: 35px;
+	color: white;
+	cursor: pointer;
+}
+
+/* Produk Menarik Section Area End */
+
+/* Detail Produk Area !!!! */
+
+.buy-box {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	overflow: auto;
+	display: none;
+}
+.buy-box-wrapper {
+	position: fixed;
+	width: 80%;
+	background-color: red;
+	/* top: 170px;
+  left: 36%; */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: animateModal 1s;
+}
+/* Detail Produk Animation */
+@keyframes animateModal {
+	from {
+		left: -300px;
+		opacity: 0;
+	}
+	to {
+		right: 0;
+		opacity: 5;
+	}
+}
+.title-box {
+	width: auto;
+	height: 50px;
+	background: linear-gradient(to left, #fb5283, #ff3527);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 13px;
+}
+.title-box h3 {
+	color: white;
+	font-weight: lighter;
+	font-size: 20px;
+}
+.close-btn {
+	background-color: transparent;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.close-btn i {
+	font-size: 30px;
+	color: #ddd;
+}
+.close-btn:hover i {
+	color: black;
+}
+.spek {
+	display: flex;
+	gap: 3%;
+}
+.content-box {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	height: auto;
+	background-color: rgb(36, 36, 36);
+	padding: 20px 25px;
+}
+.content-box h4 {
+	color: white;
+	font-weight: lighter;
+	font-size: 17.5px;
+}
+.cust {
+	color: rgb(254, 184, 62);
+}
+.ulasan {
+	background-color: whitesmoke;
+	padding: 15px 0 10px 10px;
+	border-radius: 10px;
+}
+.napel {
+	display: flex;
+	padding-left: 8px;
+	margin-top: -20px;
+}
+.napel img {
+	margin-top: 25px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.napel p {
+	color: black;
+	font-size: 17px;
+	margin-top: 40px;
+	padding-left: 10px;
+}
+.katapel {
+	height: 5.5rem;
+	padding-right: 20px;
+	overflow-y: auto;
+}
+.katapel::-webkit-scrollbar {
+	width: 2vw;
+}
+.katapel::-webkit-scrollbar-thumb {
+	background-color: black;
+}
+.katapel::-webkit-scrollbar-track {
+	background-color: #666;
+}
+.katapel {
+	color: #605f5f;
+	font-size: 17px;
+	padding-left: 10px;
+}
+.maon:hover {	
+	color: black;
+}
+
+/* Detail Produk Area End */
+
+
+
+
+/* Footer Area !!!! */
+
+.yesno p{
+	padding: 20px;
+	margin: 20px;
+	font-size: 17.5px;
+}
+.yesno button{
+	margin-right: 0.5rem;
+	margin-left: 1rem;
+}
+.social-links img {
+	height: 50px;
+	margin: 20px;
+	cursor: pointer;
+}
+.social-links {
+	text-align: center;
+	/* margin-right: 2rem; */
+}
+.nmr{
+	font-size: 20px;
+}
+#footer .socials a {
+	color: #fff;
+}
+#footer {
+	background-color: var(--primary);
+	text-align: center;
+	padding: 1rem 0 0.1rem;
+	margin-top: 3rem;
+	background-color: #000;
+	color: white;
+	font-size: 20px;
+}
+#footer .links {
+	font-size: 1.2rem;
+	background-color:#3d3c3c;
+	padding: 20px;
+	margin: 0 5rem 0 5rem;
+}
+#footer .links a:hover {
+	background-color: #666;
+	padding: 7px 13px;
+	border-radius: 10px;
+	transition: all 0.5s ease;
+}
+.row #footer .socials {
+	padding: 1rem 0;
+}
+
+#footer .socials a {
+	color: #fff;
+	margin: 1rem;
+}
+
+#footer .links {
+	margin-bottom: 1.4rem;
+}
+
+#footer .links a {
+	text-decoration: none;
+	color: white;
+	padding: 0.7rem 1rem;
+}
+
+#footer .credit {
+	font-size: 1rem;
+}
+
+#footer .credit a {
+	color: var(--bg);
+	font-weight: 700;
+}
+
+
+
+/* Footer Area End */
+
+/* RESPONSIVE AREA !!!!! */
+
+@media only screen and (max-width: 1600px) and (min-width: 1030px) {
+	.hayo {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(1, min-content);
+	}
+	#myImage a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#products .product {
+		font-size: 16px;
+	}
+	#products .product .hp .laptop .pc .stik img {
+		width: 200px;
+	}
+	.featur {
+		margin-right: 50px;
+	}
+	.featur li {
+		margin-left: 150px;
+	}
+	.featur .product .hp img {
+		height: 220px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	.buy-box-wrapper {
+		max-height: 90%;
+	}
+	.content-box h4 {
+		font-size: 16px;
+	}
+	.content-box .ulasan .napel img {
+		width: 50px;
+		height: 50px;
+	}
+	.katapel p {
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 1029px) and (min-width: 916px) {
+	.col-2 .controller {
+		width: 35%;
+	}
+	.col-1 {
+		position: relative;
+		top: -70px;
+	}
+	#myImage p {
+		font-size: 14px;
+	}
+	.hayo #myImage .mesin {
+		margin-left: -2rem;
+	}
+	#products .product {
+		font-size: 13px;
+	}
+	#products .product .hp .laptop .pc .stik img {
+		width: 200px;
+	}
+	.featur {
+		margin-right: 50px;
+	}
+	.featur li {
+		margin-left: 160px;
+	}
+	.featur .product .hp img {
+		height: 150px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	.buy-box-wrapper {
+		max-height: 100%;
+	}
+	.content-box h4 {
+		font-size: 15px;
+	}
+	.content-box .ulasan .napel p {
+		font-size: 18px;
+		margin-top: 35px;
+	}
+	.content-box .ulasan .napel img {
+		width: 40px;
+		height: 40px;
+	}
+	.katapel p {
+		font-size: 14.5px;
+	}
+}
+@media only screen and (max-width: 915px) and (min-width: 901px) {
+	.col-2 {
+		margin-left: -165px;
+	}
+	.col-2 .controller {
+		width: 30%;
+	}
+	#main {
+		margin-top: -500px;
+	}
+	.hayo {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#myImage p {
+		font-size: 12px;
+	}
+	#products .product {
+		font-size: 14px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	.featur {
+		margin-right: 35px;
+	}
+	.featur li {
+		margin-left: 110px;
+	}
+	.featur .product .hp img {
+		height: 185px;
+	}
+}
+@media only screen and (max-width: 714px) and (min-width: 711px) {
+	.col-2 {
+		margin-left: -240px;
+	}
+	.col-2 .controller {
+		width: 30%;
+		margin-left: -10px;
+	}
+	.col-2 .color-box {
+		margin-right: 50px;
+	}
+	#main {
+		margin-top: -330px;
+	}
+	.hayo {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#myImage p {
+		font-size: 12px;
+	}
+	#products .product {
+		font-size: 14px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	.col-1 h2 {
+		font-size: 30px;
+	}
+	.col-1 h3 {
+		font-size: 19px;
+	}
+	.featur {
+		margin-right: 35px;
+	}
+	.featur li {
+		margin-left: 90px;
+	}
+	.featur .product .hp img {
+		height: 140px;
+	}
+	.buy-box-wrapper {
+		max-height: 90%;
+	}
+	.content-box h4 {
+		font-size: 13px;
+	}
+	.content-box .ulasan .napel p {
+		font-size: 15px;
+	}
+	.content-box .ulasan .napel img {
+		width: 50px;
+		height: 50px;
+	}
+	.katapel p {
+		font-size: 12px;
+	}
+}
+@media only screen and (max-width: 915px) and (min-width: 715px) {
+	.col-1 h2 {
+		font-size: 50px;
+	}
+	.col-1 h3 {
+		font-size: 19px;
+	}
+	.col-1 {
+		margin-top: -80px;
+	}
+	.col-2 {
+		margin-left: -165px;
+	}
+	.col-2 .controller {
+		width: 30%;
+	}
+	#main {
+		margin-top: -330px;
+	}
+	.hayo {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#myImage p {
+		font-size: 12px;
+	}
+	#products .product {
+		font-size: 14px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	.featur {
+		margin-right: 35px;
+	}
+	.featur li {
+		margin-left: 110px;
+	}
+	.featur .product .hp img {
+		height: 180px;
+	}
+	.buy-box-wrapper {
+		max-height: 90%;
+	}
+	.content-box h4 {
+		font-size: 13px;
+	}
+	.content-box .ulasan .napel p {
+		font-size: 17px;
+		margin-top: 20px;
+	}
+	.content-box .ulasan .napel img {
+		width: 50px;
+		height: 50px;
+	}
+	.katapel p {
+		font-size: 12px;
+	}
+}
+@media only screen and (max-width: 1200px) and (min-width: 915px) {
+	.col-2 .controller {
+		width: 30%;
+	}
+	.col-1 {
+		margin-bottom: 100px;
+		margin-top: -100px;
+	}
+	/* .hayo {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,min-content);
+  }
+  #myImage {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content min-content;
+  } */
+	.hayo #myImage p {
+		font-size: 12px;
+	}
+	#myImage a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#products .product {
+		font-size: 15px;
+	}
+	#products .product .hp .laptop .pc .stik img {
+		width: 200px;
+	}
+	.featur {
+		margin-right: 50px;
+	}
+	.featur li {
+		margin-left: 140px;
+	}
+	.featur .product .hp img {
+		height: 220px;
+	}
+	.featur .product .laptop img {
+		height: 220px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	.buy-box-wrapper {
+		max-height: 90%;
+	}
+	.content-box h4 {
+		font-size: 16px;
+	}
+	.content-box .ulasan .napel img {
+		width: 45px;
+		height: 45px;
+	}
+	.katapel p {
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 921px) and (min-width: 891px) {
+	.col-1 {
+		margin-top: -150px;
+		margin-bottom: 130px;
+	}
+	.col-2 {
+		margin-left: -165px;
+	}
+	.col-2 .controller {
+		width: 30%;
+	}
+	#main {
+		margin-top: -330px;
+	}
+	.hayo {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#myImage p {
+		font-size: 12px;
+	}
+	#products .product {
+		font-size: 14px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	.featur {
+		margin-right: 35px;
+	}
+	.featur li {
+		margin-left: 100px;
+	}
+	.featur .product .laptop img {
+		height: 185px;
+	}
+	.featur .product .hp img {
+		height: 185px;
+	}
+	.hayo #myImage .tv2 {
+		height: 215px;
+	}
+	.buy-box-wrapper {
+		max-height: 90%;
+	}
+	.content-box h4 {
+		font-size: 13px;
+	}
+	.content-box .ulasan .napel p {
+		font-size: 17px;
+		margin-top: 38px;
+	}
+	.content-box .ulasan .napel img {
+		width: 50px;
+		height: 50px;
+	}
+	.katapel p {
+		font-size: 12px;
+	}
+}
+@media only screen and (max-width: 890px) and (min-width: 701px) {
+	.col-1 {
+		margin-top: -150px;
+		margin-bottom: 170px;
+	}
+	.col-2 {
+		margin-left: -185px;
+	}
+	.col-2 .controller {
+		width: 28%;
+	}
+	#main {
+		margin-top: -330px;
+	}
+	.hayo {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#myImage p {
+		font-size: 12px;
+	}
+	#products .product {
+		font-size: 14px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	.featur {
+		margin-right: 35px;
+	}
+	.featur li {
+		margin-left: 100px;
+	}
+	.featur .product .laptop img {
+		height: 160px;
+	}
+	.featur .product .hp img {
+		height: 160px;
+	}
+	.hayo #myImage .tv2 {
+		height: 218px;
+	}
+	.buy-box-wrapper {
+		max-height: 90%;
+	}
+	.content-box h4 {
+		font-size: 14px;
+	}
+	.content-box .ulasan .napel p {
+		font-size: 17px;
+		margin-top: 40px;
+	}
+	.content-box .ulasan .napel img {
+		width: 50px;
+		height: 50px;
+	}
+	.katapel p {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 730px) and (min-width: 701px) {
+	.container .h3{
+		display: none;
+	}
+	.col-1 {
+		margin-top: -150px;
+	}
+	.col-2 {
+		margin-left: -255px;
+		margin-top: 40px;
+	}
+	.col-2 .controller {
+		width: 28%;
+		margin-left: 15px;
+	}
+	.col-1 h2 {
+		font-size: 30px;
+	}
+	.col-1 h3 {
+		font-size: 18px;
+	}
+	#main {
+		margin-top: -330px;
+	}
+	.hayo {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	#myImage p {
+		font-size: 12px;
+	}
+	#products .product {
+		font-size: 14px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	.featur {
+		margin-right: 35px;
+	}
+	.featur li {
+		margin-left: 100px;
+	}
+	.featur .product .hp img {
+		height: 145px;
+	}
+	.featur .product .laptop img {
+		height: 145px;
+	}
+	.hayo #myImage .tv2 {
+		height: 215px;
+	}
+	/* .buy-box-wrapper{
+        max-height: 90%;
+      } */
+	.content-box h4 {
+		font-size: 16px;
+	}
+	.content-box .ulasan .napel p {
+		font-size: 17px;
+		margin-top: 40px;
+	}
+	.content-box .ulasan .napel img {
+		width: 50px !important;
+		height: 50px !important;
+	}
+
+	.katapel p {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.container .h3{
+		display: none;
+	}
+	nav ul {
+		width: 100%;
+		background: linear-gradient(#ff54a2, #ff575a);
+		position: absolute;
+		top: 125px;
+		right: 0;
+		z-index: 2;
+	}
+	nav ul li {
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	nav ul li a {
+		color: black;
+	}
+	.menu {
+		display: block;
+	}
+	.menu:hover {
+		background-color: #cbc7c7;
+		padding: 5px 10px;
+		border-radius: 5px;
+	}
+	#menuList {
+		overflow: hidden;
+		transition: 0.5s;
+	}
+	.row {
+		flex-direction: column-reverse;
+		margin: 50px 0;
+		padding-top: 100px;
+	}
+	.col-2 {
+		position: relative;
+		right: -10px;
+		top: -450px;
+		flex-basis: 100%;
+		margin-bottom: 50px;
+	}
+	.col-2 .controller {
+		width: 60%;
+	}
+	.color-box {
+		transform: translateX(75px);
+	}
+	.col-1 {
+		flex-basis: 100%;
+	}
+	.col-1 h2 {
+		font-size: 35px;
+	}
+	.col-1 h3 {
+		font-size: 15px;
+	}
+	#main {
+		padding-top: 100px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	
+	
+}
+@media only screen and (max-width: 650px) and (min-width: 630px) {
+	.col-2 .controller {
+		width: 55%;
+		margin-left: 100px;
+	}
+	.color-box {
+		margin-top: -50px;
+		margin-right: -100px;
+	}
+	.add-btn {
+		margin-top: -100px;
+		margin-left: 150px;
+	}
+	.hayo {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#myImage p {
+		font-size: 14px;
+	}
+	.hayo #myImage .tv2 {
+		height: 235px;
+	}
+	.hayo #myImage .mesin {
+		height: 220px;
+	}
+	.bmet {
+		display: none;
+	}
+	.featur #products .product {
+		font-size: 10px;
+	}
+	#products .product .hp img {
+		height: 165px;
+	}
+	#products .product .stik img {
+		height: 160px;
+		width: 80%;
+	}
+	#products .product .pc img {
+		height: 160px;
+		width: 80%;
+	}
+	#products .product .laptop img {
+		height: 165px;
+	}
+	.featur {
+		margin-right: -115px;
+	}
+	.featur li {
+		margin-left: 55px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	.buy-box-wrapper {
+		max-height: 90%;
+	}
+	.content-box h4 {
+		font-size: 12px;
+	}
+	.content-box .ulasan .napel p {
+		font-size: 15px;
+		margin-top: 20px;
+	}
+	.content-box .ulasan .napel img {
+		width: 50px !important;
+		height: 50px !important;
+	}
+	.katapel p {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 710px) and (min-width: 701px) {
+	.col-2 .controller {
+		width: 30%;
+	}
+	.color-box {
+		margin-top: -10px;
+		margin-right: 50px;
+	}
+	.add-btn {
+		margin-top: -10px;
+		margin-left: -10px;
+	}
+	.hayo {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#myImage p {
+		font-size: 14px;
+	}
+	.featur #products .product {
+		font-size: 10px;
+	}
+	#products .product .hp img {
+		height: 165px;
+	}
+	#products .product .stik img {
+		height: 160px;
+		width: 80%;
+	}
+	#products .product .pc img {
+		height: 160px;
+		width: 80%;
+	}
+	#products .product .laptop img {
+		height: 165px;
+		width: 100%;
+	}
+	.featur {
+		margin-right: -15px;
+	}
+	.featur li {
+		margin-left: 75px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	/* .buy-box-wrapper{
+    max-height: 90%;
+  }
+  .content-box h4{
+    font-size: 13px;
+  }
+  .content-box .ulasan .napel p{
+    font-size: 17px;
+    margin-top: 20px;
+  }
+  .content-box .ulasan .napel img{
+    width: 50px;
+    height: 50px;
+  }
+  .katapel p{
+    font-size: 12px;
+  }  */
+}
+@media only screen and (max-width: 700px) and (min-width: 646px) {
+	.col-2 .controller {
+		width: 45%;
+		position: relative;
+		bottom: 40px;
+		right: -155px;
+	}
+	.color-box {
+		margin-top: -50px;
+		margin-right: -100px;
+	}
+	.add-btn {
+		margin-top: -100px;
+		margin-left: 150px;
+	}
+	.hayo {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#myImage p {
+		font-size: 14px;
+	}
+	.featur #products .product {
+		font-size: 10px;
+	}
+	#products .product .hp img {
+		height: 145px;
+	}
+	#products .product .stik img {
+		height: 160px;
+	}
+	#products .product .pc img {
+		height: 160px;
+		width: 80%;
+	}
+	#products .product .laptop img {
+		height: 145px;
+	}
+	.featur {
+		margin-right: -15px;
+	}
+	.featur li {
+		margin-left: 75px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	.buy-box-wrapper {
+		max-height: 90%;
+	}
+	.content-box h4 {
+		font-size: 13px;
+	}
+	.content-box .ulasan .napel p {
+		font-size: 17px;
+		margin-top: 40px;
+	}
+	.content-box .ulasan .napel img {
+		width: 50px !important;
+		height: 50px !important;
+	}
+	.katapel p {
+		font-size: 14px;
+	}
+	.katapel .maon {
+		width: 80px;
+	}
+}
+@media only screen and (max-width: 629px) and (min-width: 500px) {
+	.col-2 .controller {
+		position: relative;
+		bottom: 40px;
+		right: -35px;
+	}
+	.color-box {
+		margin-top: -40px;
+	}
+	.add-btn {
+		margin-top: -50px;
+		margin-left: 40px;
+	}
+	#myImage p {
+		font-size: 15px;
+	}
+	.hayo {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.bmet {
+		display: none;
+	}
+	.hayo #myImage .mesin {
+		margin-right: -2rem;
+		width: 70%;
+	}
+	.hayo #myImage .tv2 {
+		height: 235px;
+	}
+	/* .featur{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  } */
+	#products .product {
+		font-size: 12px;
+	}
+	#products .product .hp img {
+		height: 113px;
+	}
+	#products .product .stik img {
+		height: 120px;
+		width: 80%;
+	}
+	#products .product .pc img {
+		height: 120px;
+		width: 80%;
+	}
+	.featured {
+		font-size: 19px;
+	}
+	.featur {
+		margin-right: 50px;
+	}
+	.featur li {
+		margin-left: 70px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	.buy-box-wrapper {
+		max-height: 90%;
+	}
+	.content-box h4 {
+		font-size: 12px;
+	}
+	.content-box .ulasan .napel p {
+		font-size: 13px;
+		margin-top: 20px;
+	}
+	.content-box .ulasan .napel img {
+		width: 50px !important;
+		height: 50px !important;
+	}
+	.katapel p {
+		font-size: 10px;
+	}
+}
+@media only screen and (max-width: 650px) and (min-width: 460px) {
+	.col-2 .controller {
+		position: relative;
+		bottom: 40px;
+		right: -35px;
+	}
+	.color-box {
+		margin-top: -40px;
+	}
+	.add-btn {
+		margin-top: -40px;
+		margin-left: 40px;
+	}
+	.hayo {
+		margin-right: 40px;
+		margin-left: 60px;
+	}
+	.featur .teks {
+		font-size: 13px;
+	}
+	#myImage p {
+		font-size: 14px;
+	}
+	#myImage .mesin {
+		height: 205px;
+		margin-left: -1.9rem;
+		width: 120%;
+	}
+	#products .product {
+		font-size: 10px;
+	}
+	#products .product .hp img {
+		height: 130px;
+	}
+	#products .product .stik img {
+		height: 150px;
+	}
+	#products .product .pc img {
+		height: 150px;
+	}
+	#products .product .laptop img {
+		height: 132px;
+		width: 100%;
+	}
+	.featured {
+		font-size: 18px;
+	}
+	.featur {
+		margin-right: -30px;
+		margin-left: -50px;
+	}
+	.featur li {
+		margin-left: 70px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	.title-box h3 {
+		font-size: 15px;
+	}
+	.buy-box-wrapper {
+		max-height: 90%;
+	}
+	.content-box h4 {
+		font-size: 15px;
+	}
+	.cust {
+		font-size: 17px;
+	}
+	.content-box .ulasan .napel p {
+		font-size: 15px;
+		margin-top: 35px;
+	}
+	.content-box .ulasan .napel img {
+		width: 40px !important;
+		height: 40px !important;
+	}
+	.katapel p {
+		font-size: 14px;
+	}
+	.yesno p{
+		font-size: 15px;
+	}
+	.credit p{
+		font-size: 13px;
+	}
+	.maon {
+		width: 60px;
+		height: 30px;
+		font-size: 10px;
+	}
+	footer .links a{
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width: 460px) and (min-width: 385px) {
+	.col-1 {
+		margin-top: -55px;
+	}
+	.col-1 button {
+		margin-bottom: 20px;
+	}
+	.add-btn {
+		margin-left: 10px;
+	}
+	.col-2 .controller {
+		margin-left: 35px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	#products .product {
+		font-size: 14px;
+	}
+	.featured {
+		font-size: 15px;
+	}
+	.featur {
+		margin-right: 35px;
+	}
+	.featur li {
+		margin-left: 60px;
+	}
+	.hayo {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#myImage .mesin {
+		padding-left: 0.5rem;
+		width: 100%;
+	}
+	.hayo #myImage .tv2 {
+		height: 235px;
+	}
+	#products .product .laptop {
+		width: 300px;
+	}
+	#products .product .hp {
+		width: 300px;
+	}
+	#products .product .pc {
+		width: 300px;
+	}
+	#products .product .stik {
+		width: 300px;
+	}
+	#products .product .laptop .lap {
+		margin-left: -3rem;
+	}
+	#products .product .hp .han {
+		margin-left: -2.8rem;
+	}
+	.close button {
+		width: 15px;
+		height: 10px;
+	}
+	.close-btn i {
+		font-size: 25px;
+		color: #ddd;
+	}
+	.title-box {
+		height: 45px;
+	}
+	.title-box h3 {
+		font-size: 12px;
+	}
+	.buy-box-wrapper {
+		max-height: 90%;
+	}
+	.content-box h4 {
+		font-size: 11px;
+	}
+	.content-box .ulasan .napel p {
+		font-size: 13px;
+		margin-top: 35px;
+	}
+	.content-box .ulasan .napel .decad {
+		width: 35px !important;
+		height: 35px !important;
+	}
+	.cust {
+		font-size: 15px;
+	}
+	.katapel p {
+		font-size: 8px;
+	}
+	.maon {
+		width: 50px;
+		height: 30px;
+		font-size: 10px;
+	}
+	.yesno p{
+		font-size: 15px;
+	}
+	.yesno button{
+		width: 5rem;
+	}
+	
+	footer .links a{
+		font-size: 10px;
+	}
+}
+@media only screen and (max-width: 385px) and (min-width: 350px) {
+	.col-2 .controller {
+		position: relative;
+		right: -40px;
+	}
+	.add-btn {
+		margin-left: 40px;
+	}
+	.col-1 h2 {
+		font-size: 20px;
+	}
+	.col-1 h3 {
+		font-size: 12px;
+	}
+	.col-1 {
+		position: relative;
+		top: -45px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	.featured {
+		font-size: 13.4px;
+	}
+	.featur {
+		margin-right: 25px;
+	}
+	.featur li {
+		margin-left: 50px;
+	}
+	#products .product .laptop {
+		width: 280px;
+	}
+	#products .product .hp {
+		width: 280px;
+	}
+	#products .product .pc {
+		width: 280px;
+	}
+	#products .product .stik {
+		width: 280px;
+	}
+	#products .product .laptop .lap {
+		margin-left: -2.5rem;
+	}
+	#products .product .hp .han {
+		margin-left: -2.8rem;
+	}
+	#products .product .pc .pc2 {
+		margin-left: -2rem;
+	}
+	.links {
+		font-size: 15px;
+	}
+	.close button {
+		width: 15px;
+	}
+	.close-btn i {
+		font-size: 20px;
+		color: #ddd;
+	}
+	.title-box h3 {
+		font-size: 12px;
+	}
+	.buy-box-wrapper {
+		max-height: 90%;
+	}
+	.cust {
+		font-size: 13px;
+	}
+	.content-box h4 {
+		font-size: 12px;
+	}
+	.content-box .ulasan .napel p {
+		font-size: 13px;
+		margin-top: 35px;
+	}
+	.content-box .ulasan .napel img {
+		width: 40px !important;
+		height: 40px !important;
+	}
+	.katapel p {
+		font-size: 10px;
+	}
+	.maon {
+		width: 50px;
+		height: 30px;
+		font-size: 10px;
+	}
+	.yesno p{
+		font-size: 14px;
+	}
+	.yesno button{
+		width: 5rem;
+	}
+	.credit p{
+		font-size: 11px;
+	}
+	footer .links {
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
+	}
+	.social-links{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		width: 60%;
+		margin: auto;
+	}
+}
+@media only screen and (max-width: 350px) and (min-width: 300px) {
+	.color-box {
+		margin-right: 50px;
+	}
+	.col-1 {
+		position: relative;
+		top: -60px;
+	}
+	.col-1 h2 {
+		font-size: 17px;
+	}
+	.col-1 h3 {
+		font-size: 12px;
+	}
+	.featured {
+		font-size: 11px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	#products .product {
+		font-size: 12px;
+	}
+	.featur {
+		margin-right: 30px;
+	}
+	.featur li {
+		margin-left: 35px;
+	}
+	#products .product .laptop {
+		width: 270px;
+	}
+	#products .product .laptop .lap {
+		margin-left: -3rem;
+	}
+	#products .product .hp {
+		width: 250px;
+	}
+	#products .product .hp .han {
+		margin-left: -2.8rem;
+	}
+	#products .product .pc {
+		width: 200px;
+	}
+	#products .product .pc .pc2 {
+		margin-left: -2rem;
+	}
+	#products .product .stik {
+		width: 150px;
+	}
+	.social-links img {
+		width: 35px;
+	}
+	.links {
+		font-size: 13px;
+	}
+	.close button {
+		width: 15px;
+		height: 10px;
+	}
+	.close-btn i {
+		font-size: 15px;
+		color: #ddd;
+	}
+	.title-box {
+		height: 30px;
+	}
+	.title-box h3 {
+		font-size: 12px;
+	}
+	.buy-box-wrapper {
+		max-height: 100%;
+	}
+	.cust {
+		font-size: 12px;
+	}
+	.content-box h4 {
+		font-size: 10px;
+	}
+	.content-box .ulasan .napel p {
+		font-size: 12px;
+		margin-top: 35px;
+	}
+	.content-box .ulasan .napel img {
+		width: 50px !important;
+		height: 50px !important;
+	}
+	.katapel p {
+		font-size: 8px;
+	}
+	.maon {
+		width: 50px;
+		height: 30px;
+		font-size: 10px;
+	}
+	.yesno p{
+		font-size: 12px;
+	}
+	.yesno button{
+		width: 5rem;
+	}
+	.credit p{
+		font-size: 11px;
+	}
+	footer .links {
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
+	}
+	.social-links{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		width: 60%;
+		margin: auto;
+	}
+}
+@media only screen and (max-width: 299px) and (min-width: 269px) {
+	.color-box {
+		margin-right: 50px;
+	}
+	.col-1 {
+		position: relative;
+		top: -60px;
+	}
+	.col-1 h2 {
+		font-size: 17px;
+	}
+	.col-1 h3 {
+		font-size: 12px;
+	}
+	.terbaru h2 {
+		font-size: 15px;
+	}
+	.hayo #myImage .mesin {
+		margin-left: -1.5rem;
+		width: 110%;
+	}
+	.featured {
+		font-size: 10px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	#products .product {
+		font-size: 12px;
+	}
+	.featur {
+		margin-right: 20px;
+	}
+	.featur li {
+		margin-left: 25px;
+	}
+	#products .product .laptop {
+		width: 250px;
+	}
+	#products .product .hp {
+		width: 220px;
+	}
+	#products .product .pc {
+		width: 200px;
+	}
+	#products .product .stik {
+		width: 200px;
+	}
+	#products .product .laptop .lap {
+		margin-left: -2rem;
+	}
+	#products .product .hp .han {
+		margin-left: -2rem;
+	}
+	#products .product .pc .pc2 {
+		margin-left: -2rem;
+	}
+	.social-links img {
+		width: 30px;
+	}
+	.links {
+		font-size: 10px;
+	}
+	.close-btn i {
+		font-size: 20px;
+		color: #ddd;
+	}
+	.close button {
+		width: 15px;
+	}
+	.title-box h3 {
+		font-size: 10px;
+	}
+	.buy-box-wrapper {
+		max-height: 90%;
+	}
+	.cust {
+		font-size: 11px;
+	}
+	.content-box h4 {
+		font-size: 8px;
+	}
+	.content-box .ulasan .napel p {
+		font-size: 12px;
+		margin-top: 35px;
+	}
+	.content-box .ulasan .napel img {
+		width: 35px !important;
+		height: 35px !important;
+	}
+	.katapel p {
+		font-size: 8px;
+	}
+	.maon {
+		width: 50px;
+		height: 30px;
+		font-size: 10px;
+	}
+	.yesno p{
+		font-size: 12px;
+	}
+	.yesno button{
+		width: 5rem;
+	}
+	.credit p{
+		font-size: 11px;
+	}
+	.social-links{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		width: 60%;
+		margin: auto;
+	}
+	footer .links {
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
+	}
+}
+@media only screen and (max-width: 269px) {
+	.color-box {
+		margin-right: 50px;
+	}
+	.col-1 {
+		position: relative;
+		top: -60px;
+	}
+	.col-1 h2 {
+		font-size: 17px;
+	}
+	.col-1 h3 {
+		font-size: 12px;
+	}
+	.terbaru h2 {
+		font-size: 15px;
+	}
+	.featured {
+		font-size: 9px;
+	}
+	.featur .product .stik {
+		display: block;
+	}
+	#products .product {
+		font-size: 12px;
+	}
+	.hayo #myImage .mesin {
+		margin-left: -40px;
+	}
+	.featur {
+		margin-right: 20px;
+	}
+	.featur li {
+		margin-left: 25px;
+	}
+	#products .product .pc img {
+		margin-right: -100px;
+	}
+	#products .product .laptop {
+		width: 200px;
+	}
+	#products .product .hp {
+		width: 200px;
+	}
+	#products .product .pc {
+		width: 200px;
+	}
+	#products .product .stik {
+		width: 200px;
+	}
+	#products .product .stik img {
+		width: 150px;
+	}
+	#products .product .pc img {
+		width: 150px;
+	}
+	.social-links img {
+		width: 23px;
+	}
+	#footer p {
+		font-size: 10px;
+	}
+	.links {
+		font-size: 7px;
+	}
+	.close-btn i {
+		font-size: 20px;
+		color: #ddd;
+	}
+	.close button {
+		width: 15px;
+		font-size: 10px;
+	}
+	.title-box h3 {
+		font-size: 10px;
+	}
+	.buy-box-wrapper {
+		max-height: 90%;
+	}
+	.content-box h4 {
+		font-size: 7px;
+	}
+	.cust {
+		font-size: 8px;
+	}
+	.content-box .ulasan .napel p {
+		font-size: 12px;
+		margin-top: 35px;
+	}
+	.content-box .ulasan .napel img {
+		width: 40px !important;
+		height: 40px !important;
+	}
+	.katapel p {
+		font-size: 5px;
+	}
+	.maon {
+		width: 50px;
+		height: 30px;
+		font-size: 10px;
+	}
+	.yesno p{
+		font-size: 10px;
+	}
+	.yesno button{
+		width: 3rem;
+	}
+	.credit p{
+		font-size: 11px;
+	}
+	.social-links{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		width: 90%;
+		margin: auto;
+	}
+}
